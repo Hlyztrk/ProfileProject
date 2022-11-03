@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+.container-box{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.name h2{
+    font-weight: 700;
+    color: #282828;
+}
+
+.contact .btn{
+    cursor: pointer;
+    background-color: palevioletred;
+    padding: .5rem .8rem;
+    border-radius: 7px 7px;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+
+.contact .btn:hover{
+   background-color: purple;
+   transition: all 2s ease;
+}
+
+.container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px 15px;
+    padding: 0 1rem;
+    border: dotted 6px pink;
+    margin: 2rem 0;
+}
+
+.about-me{
+    width: 32rem;
+    padding-left: 3rem;
+}
+
+.about-me h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.about-me p{
+    line-height: 1.5rem;
+}
+.container-images{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+}
+.carousel-container{
+    width: 30rem;
+    height: 20rem;
+    border-radius: 15px;
+    /* border: solid 1px red; */
+    overflow: hidden;
+    
+}
+
+.carousel-slide{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.carousel-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#arrow-left{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 0 3px 3px 0;
+}
+
+#arrow-right{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+
+    border-radius: 0 3px 3px 0;
+}
+
+#arrow-right{
+    right: 0;
+}
+#arrow-left:hover{
+    color: yellow;
+    transition: all 2s ease;
+}
+
+
+#arrow-right:hover{
+    color: yellow;
+    transition: all 2s ease;
+}
+
+.contact-form{
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}
+
+.contact-form .close{
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    position: fixed;
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: palevioletred;
+    border-radius: 50%;
+    padding: 0 .9rem .1rem .9rem;
+    color: white;
+}
+
+.contact-form .close:hover{
+    background-color: purple;
+    transition: all 2s ease;
+}
+.contact-form form{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px 6px;
+    border: solid 1px #282828;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    border: none;
+
+
+}
+
+form input{
+    padding: .5rem .2rem;
+    margin-bottom: 1rem;
+}
+
+form input::placeholder{
+    font-size: 1rem;
+    color: #909090;
+
+}
+
+form .submitButton{
+    margin-top: 1rem;
+    background-color: palevioletred;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px 5px;
+    cursor: pointer;
+}
+
+.submitButton:hover{
+    background-color: purple;
+    transition: all 2s ease;
+ }
+
+ footer{
+    
+     background-color: pink;
+     display: flex;
+     justify-content: space-between;
+     color: white;
+     font-size: 1rem;
+     padding: 1rem 1rem;
+
+ }
+
+footer .social-media a{
+    padding: 0 .5rem;
+    color: white;
+}
+
+footer .social-media a:hover{
+    color: yellow;
+    transition: all 2s ease;
+}
+
